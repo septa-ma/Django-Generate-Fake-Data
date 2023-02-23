@@ -18,16 +18,15 @@
 - 1- setup faker with django
     - create a directory -> management/commands/createdata.py in the app you want to use fake data for
     - add these in createdata.py:
-        - - from django.core.management.base import BaseCommand
-        - - from faker import Faker
+        - from django.core.management.base import BaseCommand
+        - from faker import Faker
 
-        - - class Command(BaseCommand):
-            - - help = "Command Information"
+        - class Command(BaseCommand):
+            - help = "Command Information"
 
-            - - def handle(self, *args, **kwargs):
-                - - fake = Faker()
-                    **use faker providers here.**
-    - 
+            - def handle(self, *args, **kwargs):
+                - fake = Faker()
+                    **use faker providers here.** 
 - 2- creating data (providers)
     - providers -> are list of information you might want to use.
 - 3- faker localization
@@ -38,8 +37,4 @@
     - create lists of fake data
     - create class and make functions for choose fake data 
 - 5- custom management command
-
-**For this project we use fix set of data (use fixture library)**
-# Fixture?
-- a collection of data that django knows how to import into a database.
 

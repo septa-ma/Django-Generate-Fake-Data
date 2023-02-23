@@ -26,6 +26,7 @@
 
             - def handle(self, *args, **kwargs):
                 - fake = Faker()
+                
                     **use faker providers here.** 
 - 2- creating data (providers)
     - providers -> are list of information you might want to use.
